@@ -39,3 +39,30 @@ h3 {
     letter-spacing: 2px;
     
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.questionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.question, .winner {
+    background-color: #c1ced5;
+    width: 50%;
+    padding: 25px 50px;
+    border: 5px solid #efeee8;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+    
+}
