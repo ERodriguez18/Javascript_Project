@@ -78,3 +78,25 @@ h3 {
     border: 2px solid #999;
     background-color: #CCE6F4;
 }
+
+input, button{
+    box-sizing: border-box;
+    color: #f6f2f2;
+    background: #CCE6F4;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    border: 3px solid #b5b4ae;
+    border-radius: 15px;
+    margin: 75px 0 15px 0;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.3em;
+}
+
+input[type='submit']{
+    background-color: #a1a9a1;
+}
