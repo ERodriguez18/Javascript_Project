@@ -57,3 +57,11 @@ function createQuestions(questions){
     document.querySelector('.question1').style.display = 'block';
     
 };
+
+function createAnswers(answers){
+    var answer = [];
+    answer.push(answers.correct_answer);
+    answer.push(...answers.incorrect_answers);
+    answer = randomizeArray(answer);
+    return answer;
+}
