@@ -30,8 +30,30 @@ function getMeSomeQuestions(){
 }
 function playerPrompt(){
     let person = prompt('Please Enter Your Name');
-    // Capitalizes the first letter of the name to improve styling
     let personCapitalize = person.charAt(0).toUpperCase() + person.substr(1);
 
     person ? playerName.innerText = `${personCapitalize}'s`: (alert('You Must Enter A Name'), playerPrompt());
 }
+
+function createQuestions(questions){
+    questionContainer.innerHTML = null;
+    questions.forEach((question, index) => {
+        var answers = createAnswers(question);
+        questionContainer.innerHTML += 
+        `<div class='question question${index + 1}'>
+            <h3>${question.question}</h3>
+            <div class='answers ${index + 1}'>
+                <p class='answer'>${answers[0]}</p>
+                <p class='answer'>${answers[1]}</p>
+                <p class='answer'>${answers[2]}</p>
+                <p class='answer'>${answers[3]}</p>
+            </div>
+        </div>`;
+        
+    });
+
+    selectAnswer(questions);
+
+    document.querySelector('.question1').style.display = 'block';
+    
+};
