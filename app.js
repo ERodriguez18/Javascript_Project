@@ -28,3 +28,10 @@ function getMeSomeQuestions(){
     }
     fetchQuestionsAwait();
 }
+function playerPrompt(){
+    let person = prompt('Please Enter Your Name');
+    // Capitalizes the first letter of the name to improve styling
+    let personCapitalize = person.charAt(0).toUpperCase() + person.substr(1);
+
+    person ? playerName.innerText = `${personCapitalize}'s`: (alert('You Must Enter A Name'), playerPrompt());
+}
