@@ -66,3 +66,15 @@ h3 {
     display: none;
     
 }
+
+.answer{
+    border: 2px solid #222;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.answer:hover {
+    border: 2px solid #999;
+    background-color: #CCE6F4;
+}
