@@ -100,3 +100,11 @@ label {
 input[type='submit']{
     background-color: #a1a9a1;
 }
+
+.btn--yes{
+    background-color: #b3b1bf;
+}
+
+.btn--no{
+    background-color: #ff6666;
+}
