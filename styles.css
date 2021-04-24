@@ -2,7 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width : 100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -18,14 +18,25 @@ body {
   
    }
 
+
+   IMG.displayed {
+    width: 770px;
+    height: 380px;
+    padding-top: 0px;
+    margin-top: 55px;
+    -moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0px 0px 5px #fff;
+}
+
    h1 {
     position: absolute;
     font-size: 4em;
     color: whitesmoke;
     letter-spacing: 3px;
-    font-family: 'Bangers', cursive;
     bottom: 80%;
     margin-bottom: 55px;
+    font-family: 'Bangers', cursive;
 }
 
 h2 {
@@ -33,6 +44,7 @@ h2 {
     color: whitesmoke;
     letter-spacing: 3px;
     font-family: 'Bangers', cursive;
+    
 }
 
 h3 {
@@ -58,7 +70,18 @@ h3 {
     width: 50%;
 }
 
-.question, .winner {
+.question {
+    background-color: #c1ced5;
+    /* width: 50%; */
+    padding: 25px 50px;
+    border: 5px solid #efeee8;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+    
+}
+
+.winner {
     background-color: #c1ced5;
     /* width: 50%; */
     padding: 25px 50px;
@@ -81,7 +104,23 @@ h3 {
     background-color: #CCE6F4;
 }
 
-input, button{
+input {
+    box-sizing: border-box;
+    color: #f6f2f2;
+    background: #CCE6F4;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    position: relative;
+    display: block;
+    width: 50%;
+    border: 3px solid #b5b4ae;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+ button{
     box-sizing: border-box;
     color: #f6f2f2;
     background: #CCE6F4;
