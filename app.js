@@ -77,6 +77,7 @@ function randomizeArray(array) {
     }
     return array;
 }
+
 function selectAnswer(questions) {
     var selector = document.querySelectorAll('.answer');
     let yourScore = 0; 
@@ -123,3 +124,16 @@ function selectAnswer(questions) {
 });
 }
 }
+
+function initializeScore(questions, yourScore) {
+    let totalScore = questions.length;
+    totalQuestions.innerText = totalScore; 
+    scoreChange.innerText = yourScore;
+ }
+ 
+ function confirmClose() {
+     let msg = "Are you sure you don't want to play?";
+     if(confirm(msg)){
+         winner.innerHTML = `<h2>Thank You For Playing</h2>`
+     }; 
+ }
