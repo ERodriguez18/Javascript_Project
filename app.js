@@ -31,8 +31,9 @@ function getMeSomeQuestions() {
 function playerPrompt() {
     let person = prompt('Please Enter Your Name');
     let personCapitalize = person.charAt(0).toUpperCase() + person.substr(1);
-
+    
     person ? playerName.innerText = `${personCapitalize}'s`: (alert('You Must Enter A Name'), playerPrompt());
+
 }
 
 function createQuestions(questions) {
