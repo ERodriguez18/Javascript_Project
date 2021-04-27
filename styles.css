@@ -21,8 +21,8 @@ body {
 
 
    IMG.displayed {
-    width: 770px;
-    height: 380px;
+    width: 772px;
+    height: 411px;
     padding-top: 0px;
     margin-top: 5px;
     -moz-box-shadow: 0 0 5px #fff;
@@ -59,7 +59,7 @@ h3 {
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 100%;
     position: relative;
